@@ -7,23 +7,23 @@ import {
 import { PageLayoutHeader } from '../../layouts/index'
 import {
   H1,
-  ContainerHeader,
-  ContainerNav,
+  HeaderContainer,
+  Nav,
   Link,
 } from './components'
 
 const Header = () => {
   return (
     <PageLayoutHeader>
-      <ContainerHeader>
+      <HeaderContainer>
         <div>
           <H1>Calculator App</H1>
         </div>
-        <ContainerNav>
+        <Nav>
           <Link to={HOME_PAGE_ROUTE}>Home</Link>
           <Link to={SETTINGS_PAGE_ROUTE}>Settings</Link>
-        </ContainerNav>
-      </ContainerHeader>
+        </Nav>
+      </HeaderContainer>
     </PageLayoutHeader>
   )
 }

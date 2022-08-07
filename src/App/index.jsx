@@ -1,7 +1,7 @@
 import React, { lazy, Suspense } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Header from '../components/Header/Header'
-import { ContainerApp } from './components'
+import { App } from './components'
 
 import {
   HOME_PAGE_ROUTE,
@@ -17,7 +17,7 @@ const Settings = lazy(() =>
 )
 
 export default () => (
-  <ContainerApp>
+  <App>
     <Header />
     <Suspense fallback={<Loader />}>
       <Routes>
@@ -33,5 +33,5 @@ export default () => (
         />
       </Routes>
     </Suspense>
-  </ContainerApp>
+  </App>
 )

@@ -1,18 +1,24 @@
 import React from 'react'
 
-import { PageLayout } from '../../layouts/index'
+import { PageLayoutHome } from '../../layouts/index'
 
 import Loader from '../../components/Loader/index'
+import Display from '../../components/Display/Display'
+import KeyPad from '../../components/KeyPad/KeyPad'
+import History from '../../components/History/History'
 
-import { Card, Heading } from './components'
+import { Field, ContainerHistory } from './components'
 
 export default () => {
   return (
-    <PageLayout>
-      <Card>
-        <Heading id="welcome">Welcome!</Heading>
-        <Loader />
-      </Card>
-    </PageLayout>
+    <PageLayoutHome>
+      <Field>
+        <Display />
+        <KeyPad />
+      </Field>
+      <History>
+        <History />
+      </History>
+    </PageLayoutHome>
   )
 }

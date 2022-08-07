@@ -1,5 +1,8 @@
 import styled from 'styled-components'
+import { TailSpin } from 'react-loader-spinner'
 
-export const Loader = styled.h1 `
-  margin: auto;
+export const Loader = styled(TailSpin)
+`
+  margin: 0 auto;
+  width: 100%;
 `

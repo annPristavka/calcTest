@@ -7,7 +7,7 @@ export const H1 = styled.h1`
   color: ${({ theme }) => theme.colors.white};
 `
 
-export const ContainerHeader = styled.div`
+export const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,7 +17,7 @@ export const ContainerHeader = styled.div`
   padding: 0px 25px;
 `
 
-export const ContainerNav = styled.div`
+export const Nav = styled.div`
   display: flex;
   justify-content: space-between;
   max-width: 130px;

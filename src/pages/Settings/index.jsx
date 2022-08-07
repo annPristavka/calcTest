@@ -11,7 +11,6 @@ export default () => {
     <PageLayout>
       <Card>
         <Heading id="welcome">Hello!</Heading>
-        <Loader />
       </Card>
     </PageLayout>
   )
